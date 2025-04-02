@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styl zewnętrzny - teoria</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <h2>1. Składnia teoretyczna</h2>
+    <table border="1" cellspacing="0" cellpadding="10" style="background-color: lightgray;">
+        <tr>
+            <td>
+                &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style.css&quot;&gt;
+            </td>
+        </tr>
+    </table>
+
+    <h2>2. Gdzie wstawiany jest styl zewnętrzny?</h2>
+    <p>Styl zewnętrzny wstawiany jest w sekcji &lt;head&gt; dokumentu HTML za pomocą znacznika &lt;link&gt;. Znacznik ten może występować wielokrotnie w dokumencie, co pozwala na podłączenie wielu arkuszy stylów CSS.</p>
+
+    <h2>3. Najprostsza forma wstawiania stylu zewnętrznego</h2>
+    <table border="1" cellspacing="0" cellpadding="10" style="background-color: lightgray;">
+        <tr>
+            <td>
+                &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+            </td>
+        </tr>
+    </table>
+
+    <h2>4. Ile arkuszy styli można dołączyć?</h2>
+    <p>Można dołączyć dowolną liczbę arkuszy stylów, jednak w przypadku większej liczby należy zachować zasadę kaskadowości i priorytetu styli.</p>
+
+    <h2>5. Co się dzieje w przypadku konfliktów?</h2>
+    <p>Jeśli te same style są definiowane w różnych arkuszach, przeglądarka stosuje zasadę kaskadowości – pierwszeństwo mają style zdefiniowane później lub o większej specyficzności.</p>
+
+    <h2>6. Tworzenie i edytowanie plików CSS w edytorze tekstowym</h2>
+    <p>Pliki CSS można tworzyć i edytować w dowolnym edytorze tekstowym, zapisując je z rozszerzeniem <b>.css</b>.</p>
+
+    <h2>7. Tworzenie i edytowanie plików CSS w specjalnym edytorze</h2>
+    <p>Specjalne edytory CSS, takie jak Adobe Dreamweaver czy Visual Studio Code, umożliwiają podgląd i automatyczne formatowanie kodu.</p>
+
+    <h2>8. Jakie rozszerzenie posiada plik CSS?</h2>
+    <p>Plik będący zewnętrznym arkuszem styli posiada rozszerzenie <b>.css</b>.</p>
+
+    <h2>9. Zalety zewnętrznego arkusza styli</h2>
+    <ul>
+        <li>1. Ułatwia zarządzanie wyglądem wielu stron naraz.</li>
+        <li>2. Pozwala na szybsze ładowanie stron poprzez cache przeglądarki.</li>
+    </ul>
+
+    <h2>10. Uwagi na temat pisania w CSS</h2>
+    <p>Podczas pisania CSS należy unikać nadmiernej specyficzności selektorów, stosować jednolitą konwencję nazw oraz organizować kod w logiczne sekcje.</p>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie HTML i CSS</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ol {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+Temat: Cechy modyfikowania formatowania w HTML oraz CSS (tabela). Nowe możliwości
+CSS w porównaniu z HTML (wyliczenie→numerowane). Wady CSS z wyliczeniem.
+
+<body>
+    <h2>Porównanie formatowania w HTML i CSS</h2>
+    <table>
+        <tr>
+            <th>Cecha</th>
+            <th>HTML</th>
+            <th>CSS</th>
+        </tr>
+        <tr>
+            <td>Sposób definiowania stylu</td>
+            <td>Za pomocą atrybutów (np. bgcolor, font)</td>
+            <td>Za pomocą reguł w plikach CSS</td>
+        </tr>
+        <tr>
+            <td>Elastyczność</td>
+            <td>Ograniczona</td>
+            <td>Duża</td>
+        </tr>
+        <tr>
+            <td>Separacja struktury i stylu</td>
+            <td>Nie</td>
+            <td>Tak</td>
+        </tr>
+        <tr>
+            <td>Możliwość ponownego użycia</td>
+            <td>Mała</td>
+            <td>Duża</td>
+        </tr>
+        <tr>
+            <td>Obsługa responsywności</td>
+            <td>Bardzo ograniczona</td>
+            <td>Zaawansowana</td>
+        </tr>
+    </table>
+    
+    <h2>Nowe możliwości CSS w porównaniu z HTML</h2>
+    <ol>
+        <li>Responsywne projektowanie (media queries).</li>
+        <li>Zaawansowane efekty wizualne (cienie, gradienty, animacje).</li>
+        <li>Lepsza kontrola nad układem (Flexbox, Grid).</li>
+        <li>Możliwość stosowania zmiennych CSS.</li>
+        <li>Łatwiejsze zarządzanie stylem na dużą skalę.</li>
+    </ol>
+    
+    <h2>Wady CSS</h2>
+    <ol>
+        <li>Problemy z kompatybilnością w różnych przeglądarkach.</li>
+        <li>Złożoność zarządzania dużymi arkuszami stylów.</li>
+        <li>Brak pełnej izolacji styli między komponentami.</li>
+        <li>Nieintuicyjna kolejność dziedziczenia i priorytetów.</li>
+        <li>Wymaga dodatkowej nauki w porównaniu do prostego HTML.</li>
+    </ol>
+</body>
+</html>

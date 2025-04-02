@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby osadzania CSS</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 80px;
+        }
+        strong {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sposoby osadzania CSS</h2>
+    
+    <table>
+        <tr>
+            <td>
+                <strong>1) Zewnętrzny arkusz stylów.</strong>
+                <textarea readonly>
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" />
+</head>
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td>
+                <strong>2) Styl lokalny (inline).</strong>
+                <textarea readonly>
+<selektor style="cecha1: wartość1; cecha2: wartość2;">...</selektor>
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td>
+                <strong>3) Wewnętrzny arkusz stylów.</strong>
+                <textarea readonly>
+<head>
+    <style type="text/css">
+        selektor1 { cecha: wartość; cecha2: wartość2; }
+        selektor2 { cecha: wartość; cecha2: wartość2; }
+    </style>
+</head>
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td>
+                <strong>4) Alternatywny arkusz stylów.</strong>
+                <textarea readonly>
+<head>
+    <link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+    <link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+    <link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+</head>
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    
+    <table>
+        <tr>
+            <td>
+                <strong>5) Import arkusza stylów.</strong>
+                <textarea readonly>
+<style type="text/css">
+    @import url(adres zewnętrznego arkusza stylów);
+</style>
+                </textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
