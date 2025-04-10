@@ -1,7 +1,9 @@
 p {
-    font-size: 39px; 
+    font-size: 39mm; 
+	color:green;
 }
 
 body {
-    font-size: 49px;
+    font-size: 49mm;
+	color:blue;
 }
